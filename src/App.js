@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 //import logo from './logo.svg';
 import "./App.css";
-import NavBar from "./components/navbar";
-import Counters from "./components/counters";
+import NavBar from "./components/Navbar";
+// eslint-disable-next-line
+import Counters from "./components/Counters";
+import TaskTracker from "./components/TaskTracker";
 
 class App extends Component {
   state = {
@@ -36,18 +38,19 @@ class App extends Component {
     });
     this.setState({ counters });
   };
+  // eslint-disable-next-line
   constructor() {
     super();
-    console.log("App - Constructer");
+    //console.log("App - Constructer");
   }
   componentDidMount() {
     //Ajax call here
-    console.log("App - Mounted  ---Ajax can use in here!");
+    //console.log("App - Mounted  ---Ajax can use in here!");
     this.setState({});
   }
 
   render() {
-    console.log("App - Rendered");
+    //console.log("App - Rendered");
 
     return (
       <React.Fragment>
@@ -55,13 +58,14 @@ class App extends Component {
           totalCounters={this.state.counters.filter((c) => c.value > 0).length}
           test={"Just test"}
         ></NavBar>
+        <TaskTracker />
         <main className="container">
-          <Counters
+          {/* <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
             onDelete={this.handleDelete}
             onIncrement={this.handleIncrement}
-          />
+          /> */}
         </main>
       </React.Fragment>
     );

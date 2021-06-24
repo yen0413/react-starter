@@ -1,12 +1,12 @@
-//提示:善用react-snippets套件提供的short cut
-//like: imrc , cc ...etc
+//提示:善用ES7 React/Redux/GraphQL/React-Native snippets套件提供的short cut
+//like: imrc ,rafce...etc
 
 import React, { Component } from "react";
 
 class Counter extends Component {
   componentDidUpdate(prevProps, prevState) {
-    console.log("prevProps", prevProps);
-    console.log("prevState", prevState);
+    //console.log("prevProps", prevProps);
+    //console.log("prevState", prevState);
     if (prevProps.counter.value !== this.props.counter.value) {
       //藉由比較舊的Props的值與現在的Props的值來判斷是否要更新data
       //Ajax call and get new data from server here
@@ -14,13 +14,13 @@ class Counter extends Component {
   }
 
   componentWillUnmount() {
-    console.log("Counter - Unmount");
+    //console.log("Counter - Unmount");
     //藉由React比較出Dom有元素被移除，在此處可以執行清空暫存or相關事件
   }
 
   render() {
     return (
-      //如果不想要使用<div></div>包住全部的話可以用<React.Fragment></React.Fragment>來取代
+      //如果不想要使用<div></div>包住全部的話可以用<React.Fragment></React.Fragment>或<></>來取代
       <div>
         {this.props.children}
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
