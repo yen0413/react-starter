@@ -86,7 +86,7 @@ const TaskTracker = () => {
         />
 
         <Route
-          path="/"
+          path="/TaskTracker"
           exact
           render={(props) => (
             <>

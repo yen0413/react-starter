@@ -10,14 +10,14 @@ const Header = ({ title, onAdd, showAdd, taskCount }) => {
     <header className="header-Track">
       <h1>
         {title}
-        {location.pathname === "/" && (
+        {location.pathname === "/TaskTracker" && (
           <span className="badge badge-pill badge-secondary m-2">
             {taskCount}
           </span>
         )}
       </h1>
 
-      {location.pathname === "/" && (
+      {location.pathname === "/TaskTracker" && (
         <Button
           color={showAdd ? "red" : "green"}
           text={showAdd ? "Close" : "Add"}

@@ -15,7 +15,7 @@
     {
       "text": "Study Redux",
       "day": "Jun 25th Friday",
-      "reminder": false,
+      "reminder": true,
       "id": 6
     }
   ]
