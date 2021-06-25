@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "text": "Track Test",
-      "day": "Friday",
-      "reminder": true,
-      "id": 3
-    },
-    {
       "text": "Doctor Appointment",
       "day": "Feb 4th at 2:30pm",
       "reminder": false,
@@ -17,6 +11,12 @@
       "day": "Jun 25th Friday",
       "reminder": true,
       "id": 5
+    },
+    {
+      "text": "Study Redux",
+      "day": "Jun 25th Friday",
+      "reminder": false,
+      "id": 6
     }
   ]
 }

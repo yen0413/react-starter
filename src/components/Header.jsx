@@ -3,12 +3,20 @@ import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
 import Button from "./Button";
 
-const Header = ({ title, onAdd, showAdd }) => {
+const Header = ({ title, onAdd, showAdd, taskCount }) => {
   const location = useLocation();
 
   return (
     <header className="header-Track">
-      <h1>{title}</h1>
+      <h1>
+        {title}
+        {location.pathname === "/" && (
+          <span className="badge badge-pill badge-secondary m-2">
+            {taskCount}
+          </span>
+        )}
+      </h1>
+
       {location.pathname === "/" && (
         <Button
           color={showAdd ? "red" : "green"}

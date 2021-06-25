@@ -10,7 +10,7 @@ const NavBar = ({ totalCounters }) => {
   return (
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#">
-        Navbar
+        React Function
         <span className="badge badge-pill badge-secondary">
           {totalCounters}
         </span>

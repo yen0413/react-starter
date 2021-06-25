@@ -82,6 +82,7 @@ const TaskTracker = () => {
             setShowAddTask(!showAddTask);
           }}
           showAdd={showAddTask}
+          taskCount={tasks.length}
         />
 
         <Route
