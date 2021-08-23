@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 function Task({ task, onDelete, onToggle }) {
+  console.log(task);
   return (
     <div
       className={`task-Track ${task.reminder ? "reminder-Track" : ""}`}
