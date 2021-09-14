@@ -41,7 +41,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `npm run server`
 
-Run Json-server(json-server --watch db.json --port 5000)
+Run Json-server(json-server --watch db.json --port 7070)
 
 ### ` serve -s build -l 4000`
 
