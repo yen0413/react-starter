@@ -21,7 +21,7 @@ const TaskTracker = () => {
     }, []);
     //Fetch Tasks(get all data from server)
     const fetchTasks = async () => {
-        const res = await fetch('http://localhost:5000/tasks');
+        const res = await fetch('http://localhost:7070/tasks');
         const data = await res.json();
 
         return data;
@@ -29,7 +29,7 @@ const TaskTracker = () => {
 
     //Fetch Task
     const fetchTask = async (id) => {
-        const res = await fetch(`http://localhost:5000/tasks/${id}`);
+        const res = await fetch(`http://localhost:7070/tasks/${id}`);
         const data = await res.json();
 
         return data;
@@ -37,7 +37,7 @@ const TaskTracker = () => {
 
     //Add Task
     const addTask = async (task) => {
-        const res = await fetch(`http://localhost:5000/tasks`, {
+        const res = await fetch(`http://localhost:7070/tasks`, {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify(task),
@@ -51,7 +51,7 @@ const TaskTracker = () => {
 
     //Delete Task
     const deleteTask = async (id) => {
-        await fetch(`http://localhost:5000/tasks/${id}`, { method: 'DELETE' });
+        await fetch(`http://localhost:7070/tasks/${id}`, { method: 'DELETE' });
 
         setTasks(tasks.filter((task) => task.id !== id));
     };
