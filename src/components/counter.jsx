@@ -15,7 +15,7 @@ class Counter extends Component {
     }
 
     componentWillUnmount() {
-        //console.log("Counter - Unmount");
+        //console.log('Counter - Unmount');
         //藉由React比較出Dom有元素被移除，在此處可以執行清空暫存or相關事件
     }
 
